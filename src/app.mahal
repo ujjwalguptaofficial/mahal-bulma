@@ -6,16 +6,16 @@ dateCreated:
 
 <html>
 <div>
-	<MahalIntro />
+	<Button>kkl</Button>
 </div>
 </html>
 
 <script>
 import { Component, children } from "mahal";
-import MahalIntro from "@/components/mahal_intro.mahal";
+import Button from "@/components/button.mahal";
 
 @children({
-    MahalIntro,
+    Button,
 })
 export default class extends Component {}
 </script>

@@ -1,0 +1,51 @@
+---
+name: modal.mahal
+description:
+dateCreated: October 16, 2022
+---
+
+<html>
+<div class="modal is-active">
+	<div class="modal-background"></div>
+	<div class="modal-card" :style="cardOption">
+		<header class="modal-card-head">
+			<p class="modal-card-title">
+				<slot name="header"></slot>
+			</p>
+			<button @click="onClose" class="delete" aria-label="close"></button>
+		</header>
+		<section class="modal-card-body">
+			<!-- Content ... -->
+			<slot></slot>
+		</section>
+		<footer class="modal-card-foot">
+			<!-- <button class="button is-success">Save changes</button>
+			<button class="button">Cancel</button> -->
+			<slot name="footer"></slot>
+		</footer>
+	</div>
+</div>
+</html>
+
+<script>
+import { Component, prop } from "mahal";
+
+export default class extends Component {
+    @prop() option = {
+        width: "500px",
+    };
+
+    get cardOption() {
+        return {
+            width: this.option.width,
+        };
+    }
+
+    onClose() {
+        this.emit("close");
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+</style>

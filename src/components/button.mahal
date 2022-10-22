@@ -1,0 +1,35 @@
+---
+name: button.mahal
+description:
+dateCreated: October 18, 2022
+---
+
+<html>
+<button @click="onClick" class="button" :disabled="isDisabled" :class="{'is-loading':isLoading}">
+	<slot name="left-content">
+		
+	</slot>
+	<span>
+		<slot name="default">Ok</slot>
+	</span>
+	<slot name="right-content">
+		
+	</slot>
+</button>
+</html>
+
+<script>
+import { Component, prop } from "mahal";
+
+export default class extends Component {
+    @prop() isLoading = false;
+    @prop() isDisabled = false;
+
+    onClick() {
+        this.emit("click");
+    }
+}
+</script>
+
+<style>
+</style>
