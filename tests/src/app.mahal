@@ -6,7 +6,7 @@ dateCreated:
 
 <html>
 <div>
-	<Button />
+	<BulmaButton />
 </div>
 </html>
 
