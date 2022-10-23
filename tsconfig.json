@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
         "baseUrl": "",
-        "declaration": false,
+        "declaration": true,
+        "declarationDir": "./dist/ts",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "lib": [
@@ -10,7 +11,6 @@
         ],
         "mapRoot": "./",
         "module": "es6",
-        "outDir": "bin/ts",
         "sourceMap": true,
         "target": "es6",
         "moduleResolution": "node",
@@ -19,14 +19,17 @@
                 "./*"
             ],
             "@/*": [
-                "./src/*"
+                "src/*"
             ],
             "@components/*": [
-                "./src/components/*"
+                "src/components/*"
             ],
             "@config/*": [
                 "./config/*"
             ]
         }
-    }
+    },
+    "exclude": [
+        "tests/*"
+    ]
 }

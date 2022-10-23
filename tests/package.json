@@ -1,0 +1,14 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "install_lib.js",
+  "scripts": {
+    "install:lib": "node install_lib.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mahal-bulma": "file:../mahal-bulma-1.0.0.tgz"
+  }
+}

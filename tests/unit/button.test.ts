@@ -2,6 +2,7 @@ import { mount } from "@mahaljs/test-utils";
 import Button from "@/components/button.mahal";
 import { children, Component } from "mahal";
 
+
 @children({
     Button
 })
