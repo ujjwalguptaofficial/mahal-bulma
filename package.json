@@ -19,7 +19,8 @@
     "install:lib": "npm pack && cd tests && npm run install:lib",
     "test": "cd tests && npm run test:unit",
     "install:and:test": "npm run install:lib && npm run test",
-    "build:and:test": "npm run build:dev && npm run install:and:test"
+    "build:and:test": "npm run build:dev && npm run install:and:test",
+    "prepublishOnly": "npm run deploy"
   },
   "author": "Ujjwal Gupta <https://ujjwalguptaofficial.github.io/>",
   "license": "MIT",
