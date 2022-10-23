@@ -8,7 +8,7 @@ const packageInfo = require("../package.json");
 if (packageInfo) {
     const version = packageInfo.version;
     console.log('version', version);
-    execSync(`npm i ../mahal-bulma-${version}.tgz`);
+    execSync(`npm i ../mahal-bulma-${version}.tgz --no-save`);
 }
 else {
     throw "no package found";
