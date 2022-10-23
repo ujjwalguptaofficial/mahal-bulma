@@ -1,5 +1,5 @@
-import Modal from "./modal.mahal";
-import Button from "./button.mahal";
+import BulmaModal from "./modal.mahal";
+import BulmaButton from "./button.mahal";
 
-export const BulmaModal = Modal;
-export const BulmaButton = Button;
+export const Modal = BulmaModal;
+export const Button = BulmaButton;

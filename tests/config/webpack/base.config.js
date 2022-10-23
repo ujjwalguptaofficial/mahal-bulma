@@ -10,7 +10,7 @@ const rootFolder = path.join(__dirname, '../../');
 const isEnvProduction = process.env.NODE_ENV === "production"
 
 module.exports = {
-    entry: './src/app.ts',
+    entry: './src/index.ts',
     devtool: 'source-map',
     mode: process.env.NODE_ENV || "development",
     module: {

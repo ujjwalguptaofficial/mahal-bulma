@@ -1,6 +1,6 @@
 import { mount } from "@mahaljs/test-utils";
-import Button from "@/components/button.mahal";
 import { children, Component } from "mahal";
+import { Button } from "mahal-bulma";
 
 
 @children({
@@ -20,7 +20,7 @@ class ButtonUseWithSlotContent extends Component {
 describe("Button", async () => {
 
     describe('ButtonUseWithoutSlotContent', async () => {
-        const component: Button = await mount(ButtonUseWithoutSlotContent);
+        const component = await mount(ButtonUseWithoutSlotContent);
 
         it("check button content", async () => {
             const button = component.element;
