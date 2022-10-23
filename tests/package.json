@@ -15,12 +15,11 @@
   "license": "",
   "private": "true",
   "dependencies": {
-    "mahal": "^1.5.0",
     "mahal-bulma": "file:../mahal-bulma-1.0.0.tgz"
   },
   "devDependencies": {
-    "@mahaljs/test-utils": "^1.5.0",
-    "@mahaljs/webpack-loader": "^1.5.0",
+    "@mahaljs/test-utils": "^1.8.1",
+    "@mahaljs/webpack-loader": "^1.8.1",
     "@types/chai": "^4.3.3",
     "@types/mocha": "^9.1.1",
     "chai": "^4.3.6",
