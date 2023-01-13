@@ -18,7 +18,7 @@ dateCreated: October 16, 2022
 			<!-- Content ... -->
 			<slot></slot>
 		</section>
-		<footer class="modal-card-foot" :if(hideFooter)>
+		<footer class="modal-card-foot" :if(!hideFooter)>
 			<slot name="footer"></slot>
 		</footer>
 	</div>
@@ -31,14 +31,17 @@ import { Component, prop } from "mahal";
 export default class extends Component {
     @prop() option = {
         width: "500px",
+        hideFooter: false,
     };
-
-    @prop() hideFooter = false;
 
     get cardOption() {
         return {
             width: this.option.width,
         };
+    }
+
+    get hideFooter() {
+        return this.option.hideFooter;
     }
 
     onClose() {
