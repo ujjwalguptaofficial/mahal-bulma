@@ -18,7 +18,7 @@ dateCreated: October 16, 2022
 			<!-- Content ... -->
 			<slot></slot>
 		</section>
-		<footer class="modal-card-foot">
+		<footer class="modal-card-foot" :if(hideFooter)>
 			<slot name="footer"></slot>
 		</footer>
 	</div>
@@ -32,6 +32,8 @@ export default class extends Component {
     @prop() option = {
         width: "500px",
     };
+
+    @prop() hideFooter = false;
 
     get cardOption() {
         return {
