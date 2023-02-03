@@ -30,7 +30,7 @@ import { Component, prop } from "mahal";
 
 export default class extends Component {
     @prop() option = {
-        width: "500px",
+        width: window.innerWidth < 768 ? "100%" : "500px",
         hideFooter: false,
     };
 
@@ -51,4 +51,7 @@ export default class extends Component {
 </script>
 
 <style lang="scss" scoped>
+.modal-card {
+    padding: 0 4px;
+}
 </style>
