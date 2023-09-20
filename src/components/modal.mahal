@@ -18,7 +18,7 @@ dateCreated: October 16, 2022
 			<!-- Content ... -->
 			<slot></slot>
 		</section>
-		<footer class="modal-card-foot" :if(!hideFooter)>
+		<footer class="modal-card-foot" :if(showFooter)>
 			<slot name="footer"></slot>
 		</footer>
 	</div>
@@ -26,7 +26,7 @@ dateCreated: October 16, 2022
 </html>
 
 <script>
-import { Component, prop } from "mahal";
+import { Component, computed, prop } from "mahal";
 
 export default class extends Component {
     @prop() option = {
@@ -40,8 +40,9 @@ export default class extends Component {
         };
     }
 
-    get hideFooter() {
-        return this.option.hideFooter;
+    @computed("option")
+    get showFooter() {
+        return !this.option.hideFooter;
     }
 
     onClose() {

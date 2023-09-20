@@ -14,7 +14,9 @@
   "author": "",
   "license": "",
   "private": "true",
-  "dependencies": {},
+  "dependencies": {
+    "bulma": "^0.9.4"
+  },
   "devDependencies": {
     "@types/chai": "^4.3.3",
     "@types/mocha": "^9.1.1",

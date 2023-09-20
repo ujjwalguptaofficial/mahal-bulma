@@ -7,17 +7,27 @@ dateCreated:
 <html>
 <div>
 	<BulmaButton />
+	<BulmaModal :option="{hideFooter:hideFooter}">
+		<target> Hi</target>
+		<target name="footer">Footer</target>
+	</BulmaModal>
 </div>
 </html>
 
 <script>
-import { Component, children } from "mahal";
-import {Button} from "mahal-bulma";
+import { Component, children, reactive } from "mahal";
+import { Button } from "mahal-bulma";
 
 @children({
     Button,
 })
-export default class extends Component {}
+export default class extends Component {
+    @reactive hideFooter = false;
+
+    onInit(){
+        window['main'] = this;
+    }
+}
 </script>
 
 <style>

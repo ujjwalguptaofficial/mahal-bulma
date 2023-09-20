@@ -1,6 +1,6 @@
 {
   "name": "mahal-bulma",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Mahal components for bulma css framework",
   "main": "dist/npm.export.js",
   "types": "dist/ts/index.d.ts",
@@ -25,7 +25,7 @@
   "author": "Ujjwal Gupta <https://ujjwalguptaofficial.github.io/>",
   "license": "MIT",
   "peerDependencies": {
-    "mahal": "^1.8.6"
+    "mahal": "^1.9.0"
   },
   "devDependencies": {
     "@mahaljs/test-utils": "^1.8.1",
@@ -36,7 +36,7 @@
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.4.1",
     "html-webpack-plugin": "^5.2.0",
-    "mahal": "^1.8.7",
+    "mahal": "^1.9.0",
     "mini-css-extract-plugin": "^2.5.3",
     "sass": "^1.49.0",
     "sass-loader": "^12.4.0",
